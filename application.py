@@ -5,8 +5,8 @@ import pickle;
 from sklearn.preprocessing import StandardScaler;
 # to import above listed libraries run following command
 # type pip install -r requirements.txt
-app = Flask(__name__)
-
+application = Flask(__name__)
+app = application
 # import ridge regressor model and standard scaler pickle
 ridge_model = pickle.load(open('models/ridge.pkl' , 'rb'));
 standard_scaler = pickle.load(open('models/scaler.pkl' , 'rb'));
